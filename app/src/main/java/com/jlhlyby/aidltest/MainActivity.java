@@ -18,13 +18,19 @@ import com.jlhlyby.aidl.service.BookManager;
 import java.util.List;
 
 public class MainActivity extends Activity {
-    //由AIDL文件生成的Java类
+    /**
+     *  由AIDL文件生成的Java类
+     */
     private BookManager mBookManager = null;
 
-    //标志当前与服务端连接状况的布尔值，false为未连接，true为连接中
+    /**
+     *标志当前与服务端连接状况的布尔值，false为未连接，true为连接中
+     */
     private boolean mBound = false;
 
-    //包含Book对象的list
+    /**
+     *  包含Book对象的list
+     */
     private List<Book> mBooks;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
